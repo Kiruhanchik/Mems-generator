@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./assets/styles/style.css">
+    <script src="./js/main.js"></script>
+    <title>Generator memes</title>
+</head>
+<body>
+    <header>
+        <h1>Generator of memes</h1>
+        <img src="./assets/img/pepe.png" alt="">
+    </header>
+    <main>
+        <section id="params">
+            <div id="input-img">
+                <input type="file" name="file" id="file" class="input-img" />
+                <label for="file">Ваша картинка <img src="assets/img/click-photo.png" alt=""></label>
+                <img id="mem-img" src="" alt="">
+            </div>
+            <input type="text" class="input-text" placeholder="Введите текст для вашего мема">
+            <button id="add-text" style="display: block; margin-bottom: 1.5%;">Добавить еще текст?</button>
+            <div id="input-color">
+                <input id="input-text-color" type="color" name="">
+                <label>Цвет текста</label>
+            </div>
+            <button id="create-mem">Создать мем</button>
+        </section>
+        <div id="mem">
+            <canvas id="your-mem"></canvas>
+            <button id="save-mem" >Сохранить</button>
+        </div>
+    </main>
+    <footer>Created by <a href="https://t.me/the_kiruhanchik">Kiruhanchik</a></footer>
+</body>
+</html>
